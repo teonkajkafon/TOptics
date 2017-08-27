@@ -1,0 +1,271 @@
+  .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.banner {
+  background-image: url("../images/glasses-bg.png");
+  height: 31rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-container {
+  position: relative;
+  top: 1rem;
+}
+
+.header {
+  color: white;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  height: 3rem;
+  margin-top: 0rem;
+}
+
+.placeholder {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.motto {
+  color: black;
+  background-color: white;
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+h1 {
+  display: block;
+  padding: 1.5rem 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+nav a {
+  color: white;
+  padding: 1rem 2rem 1rem 0;
+  text-decoration: none;
+}
+
+nav {
+  justify-content: flex-end;
+}
+
+.mobilenav {
+  display: none;
+}
+
+.company {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.company img {
+  height: 1.5rem;
+  padding: 0 1rem 0 2rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 10rem;
+  text-align: center;
+}
+
+.icon1, .icon2 {
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.icon2 img {
+  width: 5rem;
+}
+
+.icon1 img {
+  width: 3.5rem;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  width: 35%;
+  margin-right: 5%;
+}
+
+.item h2 {
+  color: white;
+  background-color: cadetblue;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  width: 10rem;
+}
+
+.item p {
+margin-top: 1rem;
+}
+
+.footer {
+  color: white;
+  background-color: azure;
+  height: 9.5rem;
+  align-items: center;
+  display: flex;
+  margin-top: 5rem;
+}
+
+.footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+.footer span {
+  color: black;
+}
+
+@media only screen and (min-width: 1061px) {
+  .mobilenav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .header-container {
+    position: static;
+  }
+
+  @media only screen and (max-width: 1060px) and (min-width: 600px) {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .mobilenav {
+      display: none;
+    }
+
+    h1 {
+      padding: 0.75rem 4rem;
+      font-size: 1.33rem;
+    }
+
+    .banner {
+      height: 22rem;
+    }
+    .motto {
+      margin-top: 5rem;
+      margin-right: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 599px) {
+    h1 {
+      padding: 1rem 0 1rem 0;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .banner {
+      height: 17rem;
+      background-position: 20%;
+    }
+
+    .motto {
+      margin: 9rem 0 0 0;
+      text-align: center;
+      display: block;
+    }
+
+    .icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    /*  margin: 3rem 0;*/
+    }
+
+    .icon1, .icon2 {
+    height: auto;
+    margin: 1rem;
+    justify-content: center;
+  }
+
+    .placeholder {
+      display: block;
+    }
+
+    .mobilenav a {
+      color: white;
+      padding: 1rem 2rem 1rem 0;
+      text-decoration: none;
+    }
+
+    .mobilenav {
+      display: flex;
+      justify-content: right;
+    }
+
+    nav {
+      display: none;
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
+
+    .icons h2 {
+      font-size: 0.77rem;
+      padding-top: 0.25rem;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%
+    }
+
+    .item {
+      display: block;
+      width: 100%;
+    }
+
+    .item h2 {
+      width: 100%;
+      text-align: center;
+    }
+
+    .item p {
+    margin: 1rem 1rem 3rem 1rem;
+    font-size: 0.77rem;
+    }
+
+    .footer span {
+      display: none;
+    }
+
+    .footer {
+      justify-content: center;
+      margin-top: 0;
+    }
+  }
